@@ -1,0 +1,106 @@
+@keyframes pressKey {
+	from {
+		opacity: 0%;
+		width: 0px;
+	}
+
+	to {
+		opacity: 100%;
+		width: 50%;
+	}
+}
+
+@keyframes pressKeyMobile {
+	from {
+		opacity: 0%;
+		width: 0px;
+	}
+
+	to {
+		opacity: 100%;
+		width: 100%;
+	}
+}
+
+@keyframes fadeInText {
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.content {
+	position: relative;
+	text-align: center;
+	z-index: 3;
+	top: 45%;
+
+	text-shadow: 1px 1px 2px black;
+	color: var(--theme-foreground);
+
+	.header {
+		animation: 0.5s fadeInText 1s forwards;
+		opacity: 0;
+	}
+
+	.lineA {
+		animation: 0.5s fadeInText 1.5s forwards;
+		opacity: 0;
+	}
+
+	.lineB {
+		animation: 0.5s fadeInText 2s forwards;
+		opacity: 0;
+	}
+
+	.lineC {
+		animation: 0.5s fadeInText 2.5s forwards;
+		opacity: 0;
+	}
+}
+
+.message {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	padding: 2px;
+	width: 0%;
+	height: 25px;
+	z-index: 3;
+
+	transform: translateX(-50%);
+	position: relative;
+	left: 50%;
+	top: 50%;
+
+	background: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, transparent 100%);
+	text-shadow: 1px 1px 2px black;
+	font-weight: 500;
+	color: var(--theme-foreground);
+
+	border-image: linear-gradient(
+			90deg,
+			transparent 0%,
+			var(--theme-secondary) 5%,
+			var(--theme-secondary) 95%,
+			transparent 100%
+		)
+		1 round;
+	border-style: solid;
+	border-left: 0px;
+	border-right: 0px;
+
+	animation: 1s pressKeyMobile 3s forwards;
+	opacity: 0;
+
+	@media screen and (min-width: 576px) {
+		animation: 1s pressKey 3s forwards;
+	}
+
+	span {
+		animation: 1s fadeInText 3s forwards;
+		opacity: 0;
+	}
+}
