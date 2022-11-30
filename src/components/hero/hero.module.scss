@@ -1,0 +1,148 @@
+@keyframes pulse {
+	from {
+		transform: scaleX(0) scaleY(0);
+		opacity: 1;
+	}
+	to {
+		transform: scaleX(1) scaleY(1);
+		opacity: 0;
+	}
+}
+
+@keyframes logoWaves {
+	from {
+		transform: scaleX(0) scaleY(0);
+		opacity: 0;
+	}
+	to {
+		transform: scaleX(1) scaleY(1);
+		opacity: 1;
+	}
+}
+
+@keyframes logoWavesTop {
+	from {
+		transform: translateY(0%);
+	}
+	to {
+		transform: translateY(-25%);
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+.main-hero {
+	background: transparent;
+	color: var(--pf-global--Color--light-100);
+	padding: 0;
+	height: 90vh;
+	overflow: hidden;
+	animation: 2s fadeIn 0s forwards;
+}
+
+.main-content {
+	display: flex;
+	flex-direction: column;
+
+	.content-text {
+		opacity: 0;
+		text-align: center;
+		color: var(--pf-global--Color--light-100);
+		animation: 2s fadeIn 1.5s forwards;
+		text-shadow: 0px 0px 2px black !important;
+
+		.text-extra {
+			position: relative;
+			opacity: 0;
+			top: 10px;
+			animation: 2s fadeIn 2s forwards, 1s pulse 2s infinite ease-in-out;
+		}
+	}
+}
+
+.logoWaves {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	animation: 1s logoWaves 0s forwards;
+	transform: scaleX(0) scaleY(0);
+
+	& > .waveA {
+		background: rgba(255, 255, 255, 0.25);
+		width: 325px;
+		height: 325px;
+		border-radius: 50%;
+		position: absolute;
+		z-index: 3;
+		transform: scaleX(0) scaleY(0);
+	}
+
+	& > .waveB {
+		background: rgba(255, 255, 255, 0.25);
+		width: 380px;
+		height: 380px;
+		border-radius: 50%;
+		position: absolute;
+		z-index: 2;
+		transform: scaleX(0) scaleY(0);
+	}
+
+	& > .waveC {
+		background: rgba(255, 255, 255, 0.25);
+		width: 435px;
+		height: 435px;
+		border-radius: 50%;
+		position: absolute;
+		z-index: 2;
+		transform: scaleX(0) scaleY(0);
+	}
+
+	& > .waveD {
+		background: rgba(255, 255, 255, 0.25);
+		width: 490px;
+		height: 490px;
+		border-radius: 50%;
+		position: absolute;
+		z-index: 2;
+		transform: scaleX(0) scaleY(0);
+	}
+}
+
+.wavesAnimation {
+	animation: 2s pulse 0s forwards;
+}
+
+.logoWavesFinished {
+	animation: 1s logoWavesTop 0s forwards;
+	height: 180px !important;
+}
+
+.logo {
+	background: url('/logo.jpg');
+	background-size: cover;
+	border-radius: 50%;
+	box-shadow: var(--pf-global--BoxShadow--lg);
+	width: 180px;
+	height: 180px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 4;
+}

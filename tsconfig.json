@@ -1,13 +1,16 @@
 {
+	"ts-node": {
+		"compilerOptions": {
+			"module": "CommonJS"
+		}
+	},
 	"compilerOptions": {
 		"baseUrl": "./src",
 		"paths": {
 			"@components/*": ["./components/*"],
-			"@services/*": ["./services/*"],
-			"@services": ["./services"],
-			"@views/*": ["./views/*"],
-			"@theme/*": ["./theme/*"],
-			"@utils/*": ["./utils/*"]
+			"@styles/*": ["./styles/*"],
+			"@utils/*": ["./utils/*"],
+			"@pages/*": ["./pages/*"]
 		},
 		"target": "ESNext",
 		"useDefineForClassFields": true,

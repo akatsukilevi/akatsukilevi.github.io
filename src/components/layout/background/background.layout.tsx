@@ -14,7 +14,7 @@ interface Props {
 	paused?: boolean;
 }
 
-export const BackgroundLayout = memo((conf: Props) => {
+export const LayoutBackground = memo((conf: Props) => {
 	const canvasRef = useRef<HTMLCanvasElement>(null);
 
 	const lines: Line[] = [];
@@ -147,12 +147,7 @@ export const BackgroundLayout = memo((conf: Props) => {
 			if (lines[i].half == true && dist(lines[i].x1, lines[i].y1, lines[i].x2, lines[i].y2) <= 10) {
 				lines[i] = lines[lines.length - 1];
 				lines.pop();
-			} else if (
-				lines[i].x1 < 0 &&
-				lines[i].x2 < 0 &&
-				lines[i].y1 > canvas.height &&
-				lines[i].y2 > canvas.height
-			) {
+			} else if (lines[i].x1 < 0 && lines[i].x2 < 0 && lines[i].y1 > canvas.height && lines[i].y2 > canvas.height) {
 				lines[i] = lines[lines.length - 1];
 				lines.pop();
 			}
@@ -183,8 +178,8 @@ export const BackgroundLayout = memo((conf: Props) => {
 			rad: (canvas.width + canvas.height) * 2,
 			x: canvas.width / 2,
 			y: canvas.height / 2,
-			colorMain: '#1d2021',
-			colorAlt: '#504945',
+			colorMain: '#282828',
+			colorAlt: '#3c3836',
 			op: 'copy',
 		});
 

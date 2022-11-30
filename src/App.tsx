@@ -1,30 +1,32 @@
-import { Router, Route } from 'wouter';
-import { lazy } from 'react';
+//* Utils
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Suspense, lazy } from 'react';
 
-import { useHashLocation } from '@utils/useHashLocation';
-import { ViewportLayout } from '@components/layout';
-import { ServiceProviders } from '@services';
+//* Stylesheets
+import '@patternfly/patternfly/patternfly.css';
+import '@styles/global.scss';
 
-const IntroPage = lazy(() => import('@views/intro'));
-const HomePage = lazy(() => import('@views/home'));
-const AboutPage = lazy(() => import('@views/about'));
-const ProjectsPage = lazy(() => import('@views/projects'));
-const CreditsPage = lazy(() => import('@views/credits'));
+//* Layout
+import { LayoutHeader, LayoutLoading, LayoutFooter, LayoutBackground } from '@components/layout';
+import { Page } from '@patternfly/react-core';
 
-const App = () => {
+//* Pages
+const NotFoundPage = lazy(() => import('@pages/notfound'));
+const HomePage = lazy(() => import('@pages/index'));
+
+export const App = () => {
 	return (
-		<ServiceProviders>
-			<Router hook={useHashLocation}>
-				<ViewportLayout>
-					<Route path="/" component={IntroPage} />
-					<Route path="/home" component={HomePage} />
-					<Route path="/about" component={AboutPage} />
-					<Route path="/projects" component={ProjectsPage} />
-					<Route path="/credits" component={CreditsPage} />
-				</ViewportLayout>
-			</Router>
-		</ServiceProviders>
+		<BrowserRouter>
+			<LayoutBackground width={2} length={1} emitNum={1} speed={1} maxLines={50} />
+			<Page header={<LayoutHeader />}>
+				<Suspense fallback={<LayoutLoading />}>
+					<Routes>
+						<Route path="/" element={<HomePage />} />
+						<Route path="*" element={<NotFoundPage />} />
+					</Routes>
+				</Suspense>
+				<LayoutFooter />
+			</Page>
+		</BrowserRouter>
 	);
 };
-
-export default App;

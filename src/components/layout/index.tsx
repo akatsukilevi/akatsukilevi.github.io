@@ -1,3 +1,4 @@
+export * from './header.layout';
+export * from './loading.layout';
+export * from './footer.layout';
 export * from './background/background.layout';
-export * from './viewport/viewport.layout';
-export * from './loader/loader.layout';
