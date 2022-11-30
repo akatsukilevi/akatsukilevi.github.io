@@ -24,7 +24,7 @@ export const AboutSection = () => {
 						Complex problem-solver with an analytical driven mindset.
 					</p>
 					<p className={[classes['textC'], inView && classes['visible']].join(' ')}>
-						Dedicated to achieving demanding development objectives and innovating with new solutions.
+						Dedicated to achieve demanding development objectives and innovating with new solutions.
 					</p>
 					<p className={[classes['textD'], inView && classes['visible']].join(' ')}>
 						Resourceful Application Developer with outstanding knowledge of Front-End, Back-End and Dev Ops with 6+ years of
