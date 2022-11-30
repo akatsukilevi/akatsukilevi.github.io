@@ -9,7 +9,7 @@ export const LayoutFooter = () => {
 		<PageSection className={classes['footer']}>
 			<Grid>
 				<GridItem>
-					{easterEggTrigger === 4510 ? 'Never Gonna Give You Up' : 'Made by &copy; Felipe Angelo Sgarbi, Powered by Open Source!'}
+					{easterEggTrigger === 4510 ? 'Never Gonna Give You Up' : 'Made by Felipe Angelo Sgarbi, Powered by Open Source!'}
 					{' - '}
 					<a href="https://gitlab.com/akatsukilevi/akatsukilevi.gitlab.io" target="_blank">
 						See Source Code
