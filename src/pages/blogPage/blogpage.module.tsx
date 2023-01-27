@@ -80,7 +80,12 @@ const BlogPage = () => {
 						<GridItem>
 							<Title headingLevel="h2">{post.title}</Title>
 							<Title headingLevel="h3">{post.description}</Title>
-							<Text>{post.reading_time_minutes} minutes read</Text>
+							<Text>
+								{post.reading_time_minutes} minutes read -{' '}
+								<a href={post.url} target="_blank">
+									Original Post
+								</a>
+							</Text>
 							<LabelGroup isCompact>
 								{post.tags.map((tag, key) => (
 									<Label isCompact key={key} color="blue">
