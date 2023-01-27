@@ -25,7 +25,7 @@ export const BlogEntry = ({ entry }: Props) => {
 			<Grid>
 				<GridItem
 					style={{
-						height: '200px',
+						height: '300px',
 						backgroundPosition: 'center',
 						backgroundSize: 'cover',
 						backgroundImage: entry && `url('${entry.cover_image}')`,

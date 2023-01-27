@@ -101,7 +101,7 @@ const BlogPage = () => {
 						</GridItem>
 						<GridItem
 							style={{
-								height: '200px',
+								height: '400px',
 								backgroundPosition: 'center',
 								backgroundSize: 'cover',
 								backgroundImage: post && `url('${post.cover_image}')`,
