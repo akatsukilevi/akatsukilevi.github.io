@@ -24,18 +24,19 @@ export const ExperienceSection = () => {
 							</a>
 						</CardTitle>
 						<CardBody className={classes['centered']}>
-							<Text>
+							<span>
 								<p>From March 03, 2015 to June 15, 2017</p>
 								<p>Full-Stack Developer</p>
 								<br />
-								Developed a national-scale payroll loan management system responsible for coordinating multiple resellers
-								around the country, keeping control of multiple reseller financial data, ensuring clients loan records were
+								Developed a national-scale payroll loan management system responsible for coordinating multiple distributors
+								around the country, keeping control of multiple vendors financial data, ensuring clients loan records were
 								synced and updated with multiple banks while keeping a central management system for a full-view details of
-								the performance of all resellers, by using stability-first languages and distributed systems to ensure
-								near-zero downtime across the whole country. Developed hardware maintenance tools and benchmarks for
-								ensuring the quality and stability of multiple types of hardware's, ranging from office computers to
-								large-scale servers and across multiple operating systems.
-							</Text>
+								the performance of all sellers, by using stability-first languages and distributed systems to guarantee 0%
+								downtime across the whole country, which helped them to reach a all-time record sales of $ 500,000.00 after
+								3 months using the software in production. Engineered hardware maintenance tools and benchmarks for ensuring
+								the quality and stability of multiple types of hardware, ranging from office computers to large-scale
+								servers and across multiple operating systems.
+							</span>
 						</CardBody>
 					</Card>
 				</GridItem>
@@ -50,18 +51,20 @@ export const ExperienceSection = () => {
 							</a>
 						</CardTitle>
 						<CardBody className={classes['centered']}>
-							<Text>
+							<span>
 								<p>From June 15, 2017 to Present</p>
 								<p>Full-Stack Developer</p>
 								<br />
 								Developed a high availability, fault tolerant car tracking platform from scratch following Industry's best
-								practices, with multi-platform compatibility to all major browsers and major phone operating systems, while
+								practices, with multi-platform compatibility to all major browsers and phone operating systems, while
 								developing, implementing and testing a satellite-based GPS tracker solution to multiple models and brands of
-								vehicles, ranging from personal vehicles, motorcycles, several types of trucks, industrial machinery, power
-								generators, electric-bicycles, naval vehicles(such as Jet-Ski). Also developed custom solutions to specific
-								clients to manage and control fleets of vehicles and their drivers using a AI-powered platform that ensured
-								all vehicles were in the right place at the right time in safety.
-							</Text>
+								vehicles, ranging from personal vehicles, enterprise-owned trucks and industrial machinery, improving the
+								security of the vehicles of our clients by 90% while reducing the cost of maintenance of the vehicle
+								trackers by 50%. Also created custom solutions to specific clients to manage and control fleets of vehicles
+								and their drivers using a AI-powered platform that insured all vehicles were in the right place at the right
+								time in safety, providing over 40% increase on revenue on clients using the system for management of their
+								drivers.
+							</span>
 						</CardBody>
 					</Card>
 				</GridItem>

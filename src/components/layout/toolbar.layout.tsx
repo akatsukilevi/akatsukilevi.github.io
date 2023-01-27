@@ -1,45 +1,35 @@
 import { Toolbar, ToolbarContent, ToolbarGroup, ToolbarItem, Button } from '@patternfly/react-core';
-import { GitlabIcon, EnvelopeIcon, TwitterIcon, LinkedinIcon } from '@patternfly/react-icons';
+import { Link, useLocation } from 'react-router-dom';
+
+const Routes = [
+	{
+		path: '/',
+		name: 'Home',
+	},
+	{
+		path: '/blog',
+		name: 'Blog',
+	},
+];
 
 export const LayoutToolbar = () => {
+	const { pathname } = useLocation();
+
 	return (
 		<Toolbar id="fill-toolbar">
 			<ToolbarContent>
-				<ToolbarGroup
-					variant="icon-button-group"
-					alignment={{ default: 'alignRight' }}
-					spacer={{ default: 'spacerNone', md: 'spacerMd' }}
-				>
-					<ToolbarGroup variant="icon-button-group">
-						<ToolbarItem>
-							<a href="https://gitlab.com/akatsukilevi" target="_blank">
-								<Button variant="link">
-									<GitlabIcon color="white" size="md" />
-								</Button>
-							</a>
-						</ToolbarItem>
-						<ToolbarItem>
-							<a href="https://www.linkedin.com/in/felipe-angelo-sgarbi-fullstack" target="_blank">
-								<Button variant="link">
-									<LinkedinIcon color="white" size="md" />
-								</Button>
-							</a>
-						</ToolbarItem>
-						<ToolbarItem>
-							<a href="mailto:akatsukilevi@duck.com" target="_blank">
-								<Button variant="link">
-									<EnvelopeIcon color="white" size="md" />
-								</Button>
-							</a>
-						</ToolbarItem>
-						<ToolbarItem>
-							<a href="https://twitter.com/akatsuki_levi" target="_blank">
-								<Button variant="link">
-									<TwitterIcon color="white" size="md" />
-								</Button>
-							</a>
-						</ToolbarItem>
-					</ToolbarGroup>
+				<ToolbarGroup spacer={{ default: 'spacerNone', md: 'spacerMd' }}>
+					<ToolbarItem>
+						{Routes.map((entry, key) => (
+							<Button
+								key={key}
+								component={(x) => <Link {...x} to={entry.path} />}
+								variant={pathname == entry.path ? 'primary' : 'link'}
+							>
+								{entry.name}
+							</Button>
+						))}
+					</ToolbarItem>
 				</ToolbarGroup>
 			</ToolbarContent>
 		</Toolbar>

@@ -1,8 +1,13 @@
 :root {
 	--pf-global--primary-color--100: #cc241d;
 	--pf-global--primary-color--200: #9d0006;
-	--pf-global--link--Color: #d65d0e;
-	--pf-global--link--Color--hover: #af3a03;
+
+	--pf-global--link--Color: #db7f42;
+	--pf-c-button--m-link--Color: #db7f42;
+
+	--pf-global--link--Color--hover: #af6644;
+	--pf-c-button--m-link--hover--Color: #af6644;
+
 	--pf-global--BackgroundColor--dark-100: #3c3836;
 	--pf-global--BackgroundColor--dark-200: #504945;
 	--pf-global--BackgroundColor--dark-300: #665c54;
