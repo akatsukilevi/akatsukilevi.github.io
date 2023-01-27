@@ -33,10 +33,15 @@ import ReactMarkdown from 'react-markdown';
 import remarkCodeTitle from 'remark-code-title';
 import remarkToc from 'remark-toc';
 import remarkGfm from 'remark-gfm';
+import { useEffect } from 'react';
 
 const BlogPage = () => {
 	const { id } = useParams<{ id: string }>();
 	const { response: post, loading, error } = useFetch<IPost>(`https://dev.to/api/articles/${id}`);
+
+	useEffect(() => {
+		if (!loading && !error && post) document.title = "Felipe's Portfolio: " + post.title;
+	}, [post, loading, error]);
 
 	return (
 		<>

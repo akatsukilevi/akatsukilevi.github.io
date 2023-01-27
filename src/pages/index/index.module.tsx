@@ -1,4 +1,4 @@
-import { lazy } from 'react';
+import { lazy, useEffect } from 'react';
 
 import { LayoutBackground } from '@components/layout';
 
@@ -9,6 +9,10 @@ const EducationSection = lazy(() => import('@components/education'));
 const ContactSection = lazy(() => import('@components/contact'));
 
 const IndexPage = () => {
+	useEffect(() => {
+		document.title = "Felipe's Portfolio";
+	}, []);
+
 	return (
 		<>
 			<LayoutBackground width={2} length={1} emitNum={1} speed={1} maxLines={50} />

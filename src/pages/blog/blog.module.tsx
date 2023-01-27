@@ -15,11 +15,17 @@ import { ResourcesEmptyIcon, ErrorCircleOIcon } from '@patternfly/react-icons';
 import { useFetch } from '@utils/useFetch';
 import { Link } from 'react-router-dom';
 import { BlogEntry, IBlogEntry } from '@components/blog';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const BlogListPage = () => {
 	const [page, setPage] = useState(1);
 	const { response, loading, error } = useFetch<IBlogEntry[]>(`https://dev.to/api/articles?username=akatsukilevi&page=${page}`);
+
+	useEffect(() => {
+		if (loading) document.title = "Felipe's Portfolio: Blog Loading";
+		else if (error) document.title = "Felipe's Portfolio: Blog Error";
+		else document.title = "Felipe's Portfolio: Blog";
+	}, [loading, error]);
 
 	return (
 		<>
