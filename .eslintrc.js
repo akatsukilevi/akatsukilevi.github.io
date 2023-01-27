@@ -15,7 +15,6 @@ module.exports = {
 		'xss',
 		'simple-import-sort',
 		'no-unsanitized',
-		'ava',
 	],
 	extends: [
 		'plugin:@typescript-eslint/recommended',
@@ -24,7 +23,6 @@ module.exports = {
 		'plugin:promise/recommended',
 		'plugin:jsonc/base',
 		'plugin:security/recommended',
-		'plugin:ava/recommended',
 	],
 	root: true,
 	env: {
@@ -33,10 +31,6 @@ module.exports = {
 	rules: {
 		//* We are using Typescript, node doesn't need to support it to use it
 		'node/no-unsupported-features/es-syntax': 'off',
-		//* There are two different AVA configs, so it falsely identifies tests as ignored
-		'ava/no-ignored-test-files': 'off',
-		//* AVA runtime isn't being taken into consideration by node
-		'node/no-missing-import': 'off',
 		//* Vite related weirdness
 		'node/no-unpublished-import': 'off',
 		'node/no-extraneous-import': 'off',
