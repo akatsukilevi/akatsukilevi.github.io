@@ -1,5 +1,5 @@
 //* Utils
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import { Suspense, lazy } from 'react';
 
 //* Stylesheets
@@ -18,7 +18,7 @@ const BlogPage = lazy(() => import('@pages/blogPage'));
 
 export const App = () => {
 	return (
-		<BrowserRouter>
+		<HashRouter>
 			<Page header={<LayoutHeader />}>
 				<Suspense fallback={<LayoutLoading />}>
 					<Routes>
@@ -30,6 +30,6 @@ export const App = () => {
 				</Suspense>
 				<LayoutFooter />
 			</Page>
-		</BrowserRouter>
+		</HashRouter>
 	);
 };
