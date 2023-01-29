@@ -1,13 +1,25 @@
 image: node:lts
 
+stages:
+  - deploy_gitlab
+  - deploy_github
+
 before_script:
   - npm install
 
 pages:
+  stage: deploy_gitlab
   script:
     - npm run build
   artifacts:
     paths:
       - public
+  only:
+    - main
+
+pages_gh:
+  stage: deploy_github
+  script:
+    - npm run deploy
   only:
     - main

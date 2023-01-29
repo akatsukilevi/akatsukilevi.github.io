@@ -5,10 +5,13 @@
 	"author": "Felipe Angelo Sgarbi <akatsukilevi@duck.com>",
 	"license": "GPL-3.0-or-later",
 	"main": "src/main.ts",
+	"homepage": "https://akatsukilevi.github.io/",
 	"scripts": {
 		"start": "vite",
 		"build": "vite build",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d public"
 	},
 	"dependencies": {
 		"@patternfly/patternfly": "^4.222.4",
@@ -45,6 +48,7 @@
 		"eslint-plugin-simple-import-sort": "^9.0.0",
 		"eslint-plugin-woke": "^1.0.1",
 		"eslint-plugin-xss": "^0.1.12",
+		"gh-pages": "^5.0.0",
 		"prettier": "^2.8.3",
 		"sass": "^1.57.1",
 		"ts-node": "^10.9.1",
