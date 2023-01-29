@@ -1,0 +1,1 @@
+import{r as e}from"./vendor-a4a53e21.js";function d(t,s){const[a,c]=e.useState(null),[n,o]=e.useState(!0),[f,u]=e.useState(!1);return e.useEffect(()=>{(async()=>{try{const h=await(await fetch(t,s)).json();o(!1),c(h)}catch(r){console.error(`Failed to fetch '${t}'`,r),o(!1),u(!0)}})()},[t,s]),{response:a,loading:n,error:f}}export{d as u};
