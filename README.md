@@ -1,5 +1,8 @@
 # Felipe's Personal Portfolio
 
+[![Github Status](https://github.com/akatsukilevi/akatsukilevi.github.io/actions/workflows/github-pages.yml/badge.svg)](https://github.com/akatsukilevi/akatsukilevi.github.io/actions/workflows/github-pages.yml)
+[![Gitlab Status](https://gitlab.com/akatsukilevi/akatsukilevi.gitlab.io/badges/main/pipeline.svg)](https://gitlab.com/akatsukilevi/akatsukilevi.gitlab.io/-/commits/main)
+
 Hello! Welcome to my portfolio! Here you can find the source code of the website I've made!
 
 -   [Check it out on Gitlab](https://akatsukilevi.gitlab.io)
