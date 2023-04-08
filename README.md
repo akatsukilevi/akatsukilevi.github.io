@@ -10,13 +10,9 @@ Hello! Welcome to my portfolio! Here you can find the source code of the website
 
 ## Technologies used
 
--   React
+-   Vue
 -   Vite
--   Patternfly
-
-## About blogging
-
-The blog section is actually handled by my [DEV.to](https://dev.to/akatsukilevi) profile. All blog posts sent there will be accessible via my portfolio website
+-   VitePress
 
 ## Building
 
