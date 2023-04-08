@@ -11,10 +11,6 @@
     "build": "vitepress build",
     "preview": "vitepress preview"
   },
-  "dependencies": {
-    "@fontsource/fira-code": "^4.5.13",
-    "@fontsource/fira-sans": "^4.5.10"
-  },
   "devDependencies": {
     "@types/node": "^18.15.11",
     "eslint": "^8.38.0",

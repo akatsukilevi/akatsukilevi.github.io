@@ -5,8 +5,9 @@ import tsconfig from 'vite-tsconfig-paths';
 
 //* Parts
 import { TITLE, DESCRIPTION, seo } from './seo';
-import { icons } from './icons';
+import { dependencies } from './dependencies';
 import { sidebar } from './sidebar';
+import { icons } from './icons';
 
 export default defineConfig({
 	lang: 'en-US',
@@ -20,7 +21,7 @@ export default defineConfig({
 		plugins: [tsconfig()] as any[],
 		publicDir: '../assets',
 	},
-	head: [...seo, ...icons],
+	head: [...seo, ...icons, ...dependencies],
 	markdown: {
 		theme: 'vitesse-dark',
 		lineNumbers: true,
