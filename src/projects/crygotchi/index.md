@@ -6,10 +6,10 @@ prev: false
 next: false
 ---
 
-# Upcoming
+# WIP Page
 
-Wuzzah! You have found a WIP area! I am planning big things for this space, but it isn't ready yet
+My idea is to fill this page up with a small description of the game and other things, but for now it is just a WIP page
 
-Have a treat instead:
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xIifMWp3xgU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+Here's a few useful links:
+- [Repo](https://github.com/akatsukilevi/crygotchi/)
+- [Devlog](/projects/crygotchi/devlog/)
