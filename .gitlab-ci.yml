@@ -6,11 +6,9 @@ before_script:
 pages:
   script:
     - npm run build
-    - cp -rv assets .vitepress/dist
     - mv .vitepress/dist public
   artifacts:
     paths:
       - public
   only:
     - main
-

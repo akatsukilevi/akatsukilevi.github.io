@@ -15,7 +15,6 @@ export default defineConfig({
 	titleTemplate: TITLE,
 	description: DESCRIPTION,
 	srcDir: './src',
-	mpa: true,
 	lastUpdated: true,
 	vite: {
 		plugins: [tsconfig()] as any[],
@@ -29,9 +28,7 @@ export default defineConfig({
 	themeConfig: {
 		logo: '/logo.png',
 		sidebar,
-		nav: [
-			{ text: 'Blog', link: '/blog/' }
-		],
+		nav: [{ text: 'Blog', link: '/blog/' }],
 		socialLinks: [
 			{ icon: 'github', link: 'https://github.com/akatsukilevi' },
 			{ icon: 'twitter', link: 'https://twitter.com/akatsuki_levi' },
@@ -39,8 +36,10 @@ export default defineConfig({
 			{ icon: 'linkedin', link: 'https://www.linkedin.com/in/felipe-angelo-sgarbi-fullstack' },
 		],
 		footer: {
-			message: 'Powered by Open Source! - <a href="https://gitlab.com/akatsukilevi/akatsukilevi.gitlab.io">See Source Code</a> - Hosting provided by <a href="https://docs.gitlab.com/ee/user/project/pages/">Gitlab Pages</a>',
-			copyright: 'Copyright © 2023-present Felipe Angelo Sgarbi - Released under <a href="https://choosealicense.com/licenses/gpl-3.0/">GPLv3 License</a>'
-		}
-	}
+			message:
+				'Powered by Open Source! - <a href="https://gitlab.com/akatsukilevi/akatsukilevi.gitlab.io">See Source Code</a> - Hosting provided by <a href="https://docs.gitlab.com/ee/user/project/pages/">Gitlab Pages</a>',
+			copyright:
+				'Copyright © 2023-present Felipe Angelo Sgarbi - Released under <a href="https://choosealicense.com/licenses/gpl-3.0/">GPLv3 License</a>',
+		},
+	},
 });
