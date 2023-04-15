@@ -1,0 +1,20 @@
+---
+const { title, from, to, position, url, badge, target = '_blank' } = Astro.props;
+---
+
+<div class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%]">
+	<a href={url} target={target}>
+		<div class="hero-content flex-col md:flex-row">
+			<div class="grow w-full">
+				<h1 class="text-xl font-bold">
+					{title}
+					{badge && <div class="badge badge-secondary mx-2">{badge}</div>}
+				</h1>
+				<div class="inline opacity-75">
+					<p>{from} - {to}</p>
+					<p>{position}</p>
+				</div>
+			</div>
+		</div>
+	</a>
+</div>

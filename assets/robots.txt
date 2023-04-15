@@ -2,8 +2,4 @@
 User-agent: *
 Allow: /
 
-# Host
-Host: https://sigamecar.com.br
-
-# Sitemaps
-Sitemap: https://sigamecar.com.br/sitemap.xml
+Sitemap: https://akatsukilevi.gitlab.io/sitemap-index.xml

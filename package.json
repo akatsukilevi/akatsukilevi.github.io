@@ -4,18 +4,30 @@
   "description": "My personal portfolio",
   "author": "Felipe Angelo Sgarbi <akatsukilevi@duck.com>",
   "license": "GPL-3.0-or-later",
-  "main": "src/main.ts",
   "homepage": "https://akatsukilevi.github.io/",
+  "type": "module",
+  "private": true,
   "scripts": {
-    "start": "vitepress dev",
-    "build": "vitepress build",
-    "preview": "vitepress preview"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^0.11.1",
+    "@astrojs/rss": "^1.0.1",
+    "@astrojs/sitemap": "^1.0.0",
+    "@astrojs/tailwind": "^3.0.0",
+    "@phosphor-icons/web": "^2.0.3",
+    "astro": "^2.0.0",
+    "daisyui": "^2.27.0",
+    "dayjs": "^1.11.7"
   },
   "devDependencies": {
-    "@types/node": "^18.15.11",
+    "@tailwindcss/typography": "^0.5.7",
     "eslint": "^8.38.0",
     "eslint-config-prettier": "^8.8.0",
-    "eslint-formatter-gitlab": "^4.0.0",
     "eslint-plugin-boundaries": "^3.1.1",
     "eslint-plugin-deprecate": "^0.7.0",
     "eslint-plugin-jsonc": "^2.7.0",
@@ -23,12 +35,9 @@
     "eslint-plugin-no-unsanitized": "^4.0.2",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-woke": "^1.0.1",
     "eslint-plugin-xss": "^0.1.12",
     "prettier": "^2.8.7",
-    "sass": "^1.61.0",
-    "vite-tsconfig-paths": "^4.0.8",
-    "vitepress": "^1.0.0-alpha.65"
+    "sass": "^1.62.0"
   }
 }

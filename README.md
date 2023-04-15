@@ -7,12 +7,15 @@ Hello! Welcome to my portfolio! Here you can find the source code of the website
 
 -   [Check it out on Gitlab](https://akatsukilevi.gitlab.io)
 -   [Check it out on Github](https://akatsukilevi.github.io)
+-	[Template used](https://github.com/manuelernestog/astro-modern-personal-website)
+
+Shout out to Manuel Ernesto for this sick looking template!
 
 ## Technologies used
 
--   Vue
+-   Astro
+-	MDX
 -   Vite
--   VitePress
 
 ## Building
 
