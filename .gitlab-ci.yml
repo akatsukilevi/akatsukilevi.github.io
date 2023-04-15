@@ -11,4 +11,9 @@ pages:
     paths:
       - public
   only:
-    - main
+    refs:
+      - branches
+    changes:
+      - package.json
+      - src/**/*
+      - assets/**/*
