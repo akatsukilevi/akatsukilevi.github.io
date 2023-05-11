@@ -14,4 +14,4 @@ A huge shout out to [Manuel Ernesto](https://manuelernestog.github.io) for publi
 
 I plan on making new posts regularly about how things are going, and what I'm up to! And now using Astro, it will be way easier!
 
-Also check the sidebar, now we have [RSS support!](http://127.0.0.1:3000/rss.xml)
+Also check the sidebar, now we have [RSS support!](http://akatsukilevi.gitlab.io/rss.xml)
