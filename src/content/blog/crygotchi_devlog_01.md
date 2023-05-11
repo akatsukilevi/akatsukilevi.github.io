@@ -1,5 +1,5 @@
 ---
-title: 'Crygotchi Devlog #01: I swear I'm still alive'
+title: "Crygotchi Devlog #01: I swear I'm still alive"
 description: 'I just forgot to update the devlog'
 pubDate: 'May 10 2023'
 heroImage: '/blog/devlog_01/01_cover.png'
@@ -50,7 +50,7 @@ The best part is how all decorations and tiles are simply resources that are loa
 
 To implement custom types of decorations/tiles, it can simply be extended as a new class, considering that the base decoration/tile is a abstract class that works as a data capsule of sorts:
 
-```cs
+```csharp
 public partial class RoomTile : Resource
 {
     [ExportCategory("Metadata")]
@@ -86,7 +86,7 @@ Now you can have 999 chests full of berries, because why not!
 
 Seriously, joke aside, the storage system is nothing more than just a tile decoration:
 
-```cs
+```csharp
 using System.Collections.Generic;
 
 public partial class ChestDecorationInstance : RoomTileDecorationInstance
@@ -154,7 +154,7 @@ Since it's goal is simply to store a list of Items(which also are resources just
 
 It also counts with a simple interaction script that detects if the cursor is holding a item, and store it on it's item list if it is:
 
-```cs
+```csharp
 public override void Interact(RoomTileDecorationInstance instance, Node source)
 {
 	var chest = (ChestDecorationInstance)instance;
