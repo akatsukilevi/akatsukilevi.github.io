@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	document.querySelector('html').setAttribute('data-theme', theme);
 });
 
-function setTheme(theme) {
+window.setTheme = function setTheme(theme) {
 	localStorage.setItem('theme', theme);
 	document.querySelector('html').setAttribute('data-theme', theme);
 }
