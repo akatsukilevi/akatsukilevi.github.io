@@ -1,0 +1,20 @@
+html[data-theme="ayu"] {
+	--background: #0F1419;
+	--foreground: #E6E1CF;
+
+	//* Layout
+	--border: #2D3640;
+
+	//* Text
+	--heading: #F29718;
+	--text-mute: #3E4B59;
+
+	//* Monospace
+	--pre-background: #14191F;
+	--pre-foreground: #F07178;
+	--pre-border-rust: #FF7733;
+
+	//* Links
+	--link: #E6B673; //a
+	--link-hover: #FFC44C; //a
+}

@@ -1,0 +1,20 @@
+html[data-theme="gruvbox"] {
+	--background: #282828;
+	--foreground: #ebdbb2;
+
+	//* Layout
+	--border: #7c6f64;
+
+	//* Text
+	--heading: #98971a;
+	--text-mute: #bdae93;
+
+	//* Monospace
+	--pre-background: #1d2021;
+	--pre-foreground: #8ec07c;
+	--pre-border-rust: #d65d0e;
+
+	//* Links
+	--link: #458588;
+	--link-hover: #83a598;
+}

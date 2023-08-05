@@ -1,0 +1,20 @@
+html[data-theme="latte"] {
+	--background: #eff1f5;
+	--foreground: #4c4f69;
+
+	//* Layout
+	--border: #ccd0da;
+
+	//* Text
+	--heading: #4d506a;
+	--text-mute: #838ba7;
+
+	//* Monospace
+	--pre-background: #dce0e8;
+	--pre-foreground: #40a02b;
+	--pre-border-rust: #df8e1d;
+
+	//* Links
+	--link: #1e66f5;
+	--link-hover: #1e66f5;
+}

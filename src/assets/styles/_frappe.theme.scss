@@ -1,0 +1,20 @@
+html[data-theme="frappe"] {
+	--background: #303446;
+	--foreground: #c6d0f5;
+
+	//* Layout
+	--border: #737994;
+
+	//* Text
+	--heading: #c6d0f5;
+	--text-mute: #828aa6;
+
+	//* Monospace
+	--pre-background: #232634;
+	--pre-foreground: #a6d189;
+	--pre-border-rust: #e5c890;
+
+	//* Links
+	--link: #8caaee;
+	--link-hover: #8caaee;
+}

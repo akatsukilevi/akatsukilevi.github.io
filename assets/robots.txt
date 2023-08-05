@@ -1,5 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-Sitemap: https://akatsukilevi.gitlab.io/sitemap-index.xml
