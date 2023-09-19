@@ -17,3 +17,4 @@ pages:
       - package.json
       - src/**/*
       - assets/**/*
+      - .gitlab-ci.yml

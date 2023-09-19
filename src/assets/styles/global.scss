@@ -4,6 +4,7 @@
 @import url('./_gruvbox.theme.scss');
 @import url('./_latte.theme.scss');
 @import url('./_frappe.theme.scss');
+@import url('./_mocha.theme.scss');
 @import url('./_ayu.theme.scss');
 
 html {
@@ -109,7 +110,7 @@ main {
 }
 
 //* Texts
-pre {
+pre, code {
 	background: var(--pre-background);
     color: var(--pre-foreground);
     display: inline-block;
@@ -119,6 +120,10 @@ pre {
 
 pre[data-lang="rust"] {
 	border-left: 2px solid var(--pre-border-rust);
+}
+
+pre[data-lang="js"] {
+	border-left: 2px solid var(--pre-border-js);
 }
 
 h1, h2, h3, h4 {

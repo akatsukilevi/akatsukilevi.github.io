@@ -1,0 +1,21 @@
+html[data-theme="mocha"] {
+	--background: #1e1e2e; // base
+	--foreground: #cdd6f4; // text
+
+	//* Layout
+	--border: #6c7086; // overlay0
+
+	//* Text
+	--heading: #cdd6f4; // text
+	--text-mute: #a6adc8; // Subtext0
+
+	//* Monospace
+	--pre-background: #11111b; // crust
+	--pre-foreground: #a6e3a1; // green
+	--pre-border-rust: #f9e2af; // yellow
+	--pre-border-js: #a6e3a1; // green
+
+	//* Links
+	--link: #89b4fa; // blue
+	--link-hover: #74c7ec; // sapphire
+}
